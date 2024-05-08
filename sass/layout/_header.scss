@@ -1,0 +1,37 @@
+.header {
+  width: 100vw;
+  background-color: $pink-lighter;
+  height: 40vh;
+  position: relative;
+  
+  &__inner-container {
+    text-align: center;
+    
+    @include center-element;
+  }
+  
+  &__searchbar {
+    margin-top: 2rem;
+    &--input{
+      width: 50rem;
+      height: 3.5rem;
+      border-top-left-radius: 5rem;
+      border-bottom-left-radius: 5rem;
+      outline: none;
+      padding-left: 2rem;
+      border: 3px solid $black;
+    }
+    
+    &--button {
+      height: 3.5rem;
+      background-color: $black;
+      color: $white;
+      width: 5rem;
+      transform: translateX(-7px);
+      border: 3px solid $black;
+      border-top-right-radius: 5rem;
+      border-bottom-right-radius: 5rem;
+      cursor: pointer;
+    }
+  }
+}
