@@ -16,6 +16,10 @@
   &--sub {
     color: $violet-darker-1;
     font-size: 4rem;
+
+    @include respond (phone) {
+      font-size: 2rem;
+    }
   }
 }
 

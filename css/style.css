@@ -29,13 +29,16 @@ body {
   @media (max-width: 75em) {
     .header__title {
       font-size: 6rem; } }
-  @media (max-width: 26.25em) {
+  @media (max-width: 28.125em) {
     .header__title {
       font-size: 4rem;
       word-spacing: 0; } }
   .header__title--sub {
     color: #2b1357;
     font-size: 4rem; }
+    @media (max-width: 28.125em) {
+      .header__title--sub {
+        font-size: 2rem; } }
 
 .link {
   padding: 1rem;
@@ -54,8 +57,12 @@ body {
   display: flex;
   justify-content: center;
   font-size: 2rem;
-  height: 60rem;
-  padding: 10rem; }
+  max-height: 90rem;
+  padding: 4rem 10rem; }
+  @media (max-width: 28.125em) {
+    .accordion {
+      padding: 4rem 10rem;
+      max-height: 96rem; } }
   .accordion input {
     display: none; }
   .accordion__tab {
@@ -64,7 +71,7 @@ body {
     @media (max-width: 37.5em) {
       .accordion__tab {
         width: 50rem; } }
-    @media (max-width: 26.25em) {
+    @media (max-width: 28.125em) {
       .accordion__tab {
         width: 40rem; } }
     .accordion__tab:not(:last-child) {
@@ -78,7 +85,7 @@ body {
       padding: 3rem;
       height: 4rem;
       cursor: pointer; }
-      @media (max-width: 26.25em) {
+      @media (max-width: 28.125em) {
         .accordion__tab-label {
           padding-right: 2rem; } }
       .accordion__tab-label::after {
@@ -86,12 +93,12 @@ body {
         color: #11009E;
         transform: rotate(90deg);
         height: 1rem; }
-        @media (max-width: 26.25em) {
+        @media (max-width: 28.125em) {
           .accordion__tab-label::after {
             font-size: 1.5rem; } }
       .accordion__tab-label h2 {
         font-size: 2rem; }
-        @media (max-width: 26.25em) {
+        @media (max-width: 28.125em) {
           .accordion__tab-label h2 {
             font-size: 1.5rem; } }
     .accordion__tab-content {
@@ -113,7 +120,7 @@ body {
     @media (max-width: 56.25em) {
       .accordion input:checked + .accordion__tab-label::after {
         transform: rotate(-90deg) translateY(-1.75rem); } }
-    @media (max-width: 26.25em) {
+    @media (max-width: 28.125em) {
       .accordion input:checked + .accordion__tab-label::after {
         transform: rotate(-90deg) translateY(-1.1rem); } }
   .accordion__link-container {
@@ -154,7 +161,7 @@ body {
   padding: 5rem 3rem; }
   .footer__inner-container {
     display: flex; }
-    @media (max-width: 26.25em) {
+    @media (max-width: 28.125em) {
       .footer__inner-container {
         flex-direction: column; } }
   .footer__logo {
@@ -164,7 +171,7 @@ body {
   .footer__links-container {
     margin-left: 10rem;
     display: flex; }
-    @media (max-width: 26.25em) {
+    @media (max-width: 28.125em) {
       .footer__links-container {
         margin-left: 0;
         margin-top: 5rem; } }
@@ -199,7 +206,7 @@ body {
   @media (max-width: 75em) {
     .header {
       height: 40vh; } }
-  @media (max-width: 26.25em) {
+  @media (max-width: 28.125em) {
     .header {
       height: 30vh; } }
   .header__inner-container {
@@ -216,7 +223,7 @@ body {
     @media (max-width: 56.25em) {
       .header__searchbar {
         width: 60rem; } }
-    @media (max-width: 26.25em) {
+    @media (max-width: 28.125em) {
       .header__searchbar {
         width: 30rem; } }
     .header__searchbar--input {
@@ -252,7 +259,7 @@ body {
     align-items: center; }
     .navigation__right-side ul {
       list-style-type: none; }
-      @media (max-width: 26.25em) {
+      @media (max-width: 28.125em) {
         .navigation__right-side ul {
           display: none; } }
       .navigation__right-side ul li {

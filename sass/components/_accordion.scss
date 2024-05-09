@@ -2,9 +2,13 @@
   display: flex;
   justify-content: center;
   font-size: 2rem;
-  height: 60rem;
-  padding: 10rem;
+  max-height: 90rem;
+  padding: 4rem 10rem;
 
+  @include respond(phone) {
+    padding: 4rem 10rem;
+    max-height: 96rem;
+  }
   
   input {
     display: none;
