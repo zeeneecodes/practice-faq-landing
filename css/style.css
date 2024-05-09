@@ -16,6 +16,43 @@ body {
   font-size: 6rem;
   color: #11009E; }
 
+.accordion {
+  display: flex;
+  justify-content: center;
+  padding: 10rem 0;
+  font-size: 2rem; }
+  .accordion input {
+    display: none; }
+  .accordion__tab {
+    padding: 2rem 3rem;
+    width: 80rem;
+    background-color: #FAE7F3;
+    border-radius: 2rem;
+    transition: all .2s; }
+    .accordion__tab-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600; }
+      .accordion__tab-label::after {
+        content: '\276F';
+        color: #11009E;
+        transform: rotate(90deg);
+        height: 1rem; }
+    .accordion__tab-content {
+      overflow: hidden;
+      max-height: 0;
+      transition: all .3s;
+      background-color: #FAE7F3; }
+      .accordion__tab-content p {
+        margin-top: 1rem;
+        font-size: 1.5rem; }
+  .accordion input:checked ~ .accordion__tab-content {
+    max-height: 10rem; }
+  .accordion input:checked + .accordion__tab-label::after {
+    transform: rotate(-90deg) translateY(-20px);
+    transform-origin: center; }
+
 .header {
   width: 100vw;
   background-color: #FAE7F3;

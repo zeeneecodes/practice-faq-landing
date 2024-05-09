@@ -1,0 +1,53 @@
+.accordion {
+  display: flex;
+  justify-content: center;
+  padding: 10rem 0;
+  font-size: 2rem;
+  
+  input {
+    display: none;
+  }
+  
+  &__tab {
+    padding: 2rem 3rem;
+    width: 80rem;
+    background-color: $pink-lighter;
+    border-radius: 2rem;
+    transition: all .2s;
+    
+    &-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+
+      &::after {
+        content: '\276F';
+        color: $violet-darker;
+        transform: rotate(90deg);
+        height: 1rem;
+      }
+
+    }
+    &-content {
+      overflow: hidden;
+      max-height: 0;
+      transition: all .3s;
+      background-color:$pink-lighter;
+
+      p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  & input:checked ~ &__tab-content {
+    max-height: 10rem;
+  }
+
+  & input:checked + &__tab-label::after {
+    transform: rotate(-90deg) translateY(-20px);
+    transform-origin: center;
+  }
+}
