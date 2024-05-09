@@ -3,6 +3,7 @@
   justify-content: center;
   padding: 10rem 0;
   font-size: 2rem;
+
   
   input {
     display: none;
@@ -15,17 +16,24 @@
     border-radius: 2rem;
     transition: all .2s;
     
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
     &-label {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-weight: 600;
 
       &::after {
         content: '\276F';
         color: $violet-darker;
         transform: rotate(90deg);
         height: 1rem;
+      }
+
+      & h2 {
+        font-size: 2rem;
       }
 
     }
