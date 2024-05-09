@@ -8,6 +8,10 @@
   
   &__inner-container {
     display: flex;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
   }
 
   &__logo {
@@ -22,6 +26,11 @@
     &-container {
       margin-left: 10rem;
       display: flex;
+
+      @include respond(phone) {
+        margin-left: 0;
+        margin-top: 5rem;
+      }
     }
 
     &-title {
