@@ -116,6 +116,8 @@ body {
     .footer__links-link:link, .footer__links-link:visited {
       text-decoration: none;
       color: #FAE7F3; }
+    .footer__links-link:hover {
+      border-bottom: 2px solid #fff; }
 
 .header {
   background-color: #FAE7F3;
