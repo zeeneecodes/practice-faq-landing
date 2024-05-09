@@ -15,12 +15,15 @@ body {
 .header__title {
   font-size: 6rem;
   color: #11009E; }
+  .header__title--sub {
+    color: #11009E;
+    font-size: 4rem; }
 
 .accordion {
   display: flex;
   justify-content: center;
-  padding: 10rem 0;
-  font-size: 2rem; }
+  font-size: 2rem;
+  padding: 10rem; }
   .accordion input {
     display: none; }
   .accordion__tab {
@@ -56,8 +59,29 @@ body {
     transform: rotate(-90deg) translateY(-20px);
     transform-origin: center; }
 
+.btn {
+  border-style: none;
+  background-color: #000;
+  color: #FAE7F3;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .2s;
+  margin-left: 5px; }
+  .btn:hover {
+    background-color: #FAE7F3;
+    color: #000; }
+
+.contact {
+  display: flex;
+  justify-content: center; }
+  .contact__inner-container {
+    text-align: center; }
+  .contact__header {
+    margin-bottom: 1.5rem; }
+
 .header {
-  width: 100vw;
   background-color: #FAE7F3;
   height: 40vh;
   position: relative; }
@@ -90,7 +114,6 @@ body {
 
 .navigation {
   background-color: #4942E4;
-  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -110,18 +133,5 @@ body {
     cursor: pointer; }
   .navigation__link:hover {
     border-bottom: 0.4rem solid #fff; }
-  .navigation__sign-in {
-    border-style: none;
-    background-color: #000;
-    color: #FAE7F3;
-    font-size: 2rem;
-    padding: 1rem 2rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all .2s;
-    margin-left: 5px; }
-    .navigation__sign-in:hover {
-      background-color: #FAE7F3;
-      color: #000; }
   .navigation__logo {
     width: 15rem; }

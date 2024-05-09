@@ -1,4 +1,9 @@
 .header__title {
   font-size: 6rem;
   color: $violet-darker;
+  
+  &--sub {
+    color: $violet-darker;
+    font-size: 4rem;
+  }
 }
