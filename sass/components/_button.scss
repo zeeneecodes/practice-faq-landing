@@ -1,0 +1,16 @@
+.btn {
+  border-style: none;
+  background-color: $black;
+  color: $pink-lighter;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .2s;
+  margin-left: 5px;
+
+  &:hover {
+    background-color: $pink-lighter;
+    color: $black;
+  }
+}
