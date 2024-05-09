@@ -6,6 +6,34 @@
   align-items: center;
   padding: 2rem 4rem;
 
+  &__right-side{
+    display: flex;
+    align-items: center;
+
+    & ul {
+      list-style-type: none;
+
+      & li {
+        display: inline-block;
+        font-size: 2rem;
+        margin-right: 2rem;
+      }
+    }
+  }
+  
+  &__link {
+    &:link,
+    &:visited {
+      color: $pink-lighter;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    &:hover {
+      border-bottom: .4rem solid $white;
+    }
+  }
+
   &__sign-in {
     border-style: none;
     background-color: $black;
@@ -15,10 +43,15 @@
     border-radius: 5px;
     cursor: pointer;
     transition: all .2s;
+    margin-left: 5px;
 
     &:hover {
       background-color: $pink-lighter;
       color: $black;
     }
+  }
+
+  &__logo {
+    width: 15rem;
   }
 }

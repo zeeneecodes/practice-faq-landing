@@ -12,13 +12,6 @@ body {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif; }
 
-.navigation__name {
-  color: #fff;
-  font-size: 3rem;
-  font-weight: 500; }
-  .navigation__name--vertical-bar {
-    font-size: 4rem; }
-
 .header__title {
   font-size: 6rem;
   color: #11009E; }
@@ -62,6 +55,21 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 2rem 4rem; }
+  .navigation__right-side {
+    display: flex;
+    align-items: center; }
+    .navigation__right-side ul {
+      list-style-type: none; }
+      .navigation__right-side ul li {
+        display: inline-block;
+        font-size: 2rem;
+        margin-right: 2rem; }
+  .navigation__link:link, .navigation__link:visited {
+    color: #FAE7F3;
+    text-decoration: none;
+    cursor: pointer; }
+  .navigation__link:hover {
+    border-bottom: 0.4rem solid #fff; }
   .navigation__sign-in {
     border-style: none;
     background-color: #000;
@@ -70,7 +78,10 @@ body {
     padding: 1rem 2rem;
     border-radius: 5px;
     cursor: pointer;
-    transition: all .2s; }
+    transition: all .2s;
+    margin-left: 5px; }
     .navigation__sign-in:hover {
       background-color: #FAE7F3;
       color: #000; }
+  .navigation__logo {
+    width: 15rem; }
