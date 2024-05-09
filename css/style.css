@@ -83,7 +83,9 @@ body {
   border-style: none;
   background-color: #000;
   color: #FAE7F3;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
   padding: 1rem 2rem;
   border-radius: 5px;
   cursor: pointer;
@@ -186,13 +188,17 @@ body {
       list-style-type: none; }
       .navigation__right-side ul li {
         display: inline-block;
-        font-size: 2rem;
-        margin-right: 2rem; }
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-right: 2rem;
+        padding-bottom: .5rem;
+        border-bottom: .4rem solid transparent;
+        transition: all .3s ease-out; }
+        .navigation__right-side ul li:hover {
+          border-bottom: 0.4rem solid #fff; }
   .navigation__link:link, .navigation__link:visited {
     color: #FAE7F3;
     text-decoration: none;
     cursor: pointer; }
-  .navigation__link:hover {
-    border-bottom: 0.4rem solid #fff; }
   .navigation__logo {
     width: 15rem; }

@@ -8,14 +8,22 @@
   &__right-side{
     display: flex;
     align-items: center;
-
+    
     & ul {
       list-style-type: none;
-
+      
       & li {
         display: inline-block;
-        font-size: 2rem;
+        font-size: 1.5rem;
+        margin-top: 1rem;
         margin-right: 2rem;
+        padding-bottom: .5rem;
+        border-bottom: .4rem solid transparent;
+        transition: all .3s ease-out;
+
+        &:hover {
+          border-bottom: .4rem solid $white;
+        }
       }
     }
   }
@@ -28,9 +36,6 @@
       cursor: pointer;
     }
 
-    &:hover {
-      border-bottom: .4rem solid $white;
-    }
   }
 
   &__logo {
