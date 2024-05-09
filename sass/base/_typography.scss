@@ -1,9 +1,30 @@
 .header__title {
-  font-size: 6rem;
-  color: $violet-darker-2;
+  font-size: 8rem;
+  color: $violet-darker-1;
+  word-spacing: -1rem;
   
   &--sub {
-    color: $violet-darker-2;
+    color: $violet-darker-1;
     font-size: 4rem;
+  }
+}
+
+.link {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+  transition: all .15s ease-out;
+  
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: $violet-darker-1;
+    font-size: 1.7rem;
+    text-align: end;
+    
+  }
+
+  &:hover {
+    border-bottom: 4px solid $violet-darker-1;
   }
 }
