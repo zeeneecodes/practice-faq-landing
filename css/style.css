@@ -13,31 +13,48 @@ body {
   font-family: Arial, Helvetica, sans-serif; }
 
 .header__title {
-  font-size: 6rem;
-  color: #11009E; }
+  font-size: 8rem;
+  color: #2b1357;
+  word-spacing: -1rem; }
   .header__title--sub {
-    color: #11009E;
+    color: #2b1357;
     font-size: 4rem; }
+
+.link {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+  transition: all .15s ease-out; }
+  .link:link, .link:visited {
+    text-decoration: none;
+    color: #2b1357;
+    font-size: 1.7rem;
+    text-align: end; }
+  .link:hover {
+    border-bottom: 4px solid #2b1357; }
 
 .accordion {
   display: flex;
   justify-content: center;
   font-size: 2rem;
+  height: 60rem;
   padding: 10rem; }
   .accordion input {
     display: none; }
   .accordion__tab {
-    padding: 2rem 3rem;
     width: 80rem;
-    background-color: #FAE7F3;
-    border-radius: 2rem;
     transition: all .2s; }
     .accordion__tab:not(:last-child) {
       margin-bottom: 1rem; }
     .accordion__tab-label {
       display: flex;
       justify-content: space-between;
-      align-items: center; }
+      align-items: center;
+      background-color: #FAE7F3;
+      border-radius: .5rem;
+      padding: 3rem;
+      height: 4rem;
+      cursor: pointer; }
       .accordion__tab-label::after {
         content: '\276F';
         color: #11009E;
@@ -49,15 +66,18 @@ body {
       overflow: hidden;
       max-height: 0;
       transition: all .3s;
-      background-color: #FAE7F3; }
+      background-color: #fff; }
       .accordion__tab-content p {
-        margin-top: 1rem;
+        margin: 2rem 3rem;
         font-size: 1.5rem; }
   .accordion input:checked ~ .accordion__tab-content {
     max-height: 10rem; }
   .accordion input:checked + .accordion__tab-label::after {
     transform: rotate(-90deg) translateY(-20px);
     transform-origin: center; }
+  .accordion__link-container {
+    display: flex;
+    justify-content: end; }
 
 .btn {
   border-style: none;
@@ -138,17 +158,20 @@ body {
       border-bottom-left-radius: 5rem;
       outline: none;
       padding-left: 2rem;
-      border: 3px solid #000; }
+      border-style: none;
+      box-shadow: 2rem 1.5rem 5rem rgba(0, 0, 0, 0.2); }
     .header__searchbar--button {
       height: 3.5rem;
+      font-size: 2rem;
       background-color: #000;
       color: #fff;
       width: 5rem;
-      transform: translateX(-7px);
-      border: 3px solid #000;
+      transform: translateX(-7px) translateY(1.8px);
       border-top-right-radius: 5rem;
       border-bottom-right-radius: 5rem;
-      cursor: pointer; }
+      border-style: none;
+      cursor: pointer;
+      box-shadow: 2rem 1.5rem 5rem rgba(0, 0, 0, 0.2); }
 
 .navigation {
   background-color: #2b1357;
