@@ -3,6 +3,18 @@
   background-color: $pink-lighter;
   height: 40vh;
   position: relative;
+  
+  @include respond(big-desktop) {
+    height: 60vh;
+  }
+
+  @include respond(tab-land) {
+    height: 40vh;
+  }
+
+  @include respond(phone) {
+    height: 35vh;
+  }
 
   
   &__inner-container {
@@ -11,7 +23,19 @@
   }
   
   &__searchbar {
+    display: flex;
+    justify-content: center;
     margin-top: 2rem;
+    width: 100rem;
+
+    @include respond(tab-port) {
+      width: 60rem;
+    }
+
+    @include respond(phone) {
+      width: 30rem;
+    }
+
     &--input{
       width: 50rem;
       height: 3.5rem;
@@ -29,7 +53,7 @@
       background-color: $black;
       color: $white;
       width: 5rem;
-      transform: translateX(-7px) translateY(1.8px);
+      transform: translateX(-7px) translateY(-.5px);
       border-top-right-radius: 5rem;
       border-bottom-right-radius: 5rem;
       border-style: none;

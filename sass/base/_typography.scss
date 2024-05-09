@@ -1,7 +1,16 @@
 .header__title {
+  display: inline-block;
   font-size: 8rem;
   color: $violet-darker-1;
   word-spacing: -1rem;
+
+  @include respond(tab-land) {
+    font-size: 6rem;
+  }
+
+  @include respond(phone) {
+    font-size: 5rem;
+  }
   
   &--sub {
     color: $violet-darker-1;
