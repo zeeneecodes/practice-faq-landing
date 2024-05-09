@@ -8,8 +8,16 @@
 </head>
 <body>
   <nav class="navigation">
-    <h3 class="navigation__name"><span class="navigation__name--vertical-bar">&#124;</span> company name</h3>
-    <button class="navigation__sign-in">Sign In</button>
+    <a href="#"><img class="navigation__logo" src="img/logo.svg"></a>
+    <div class="navigation__right-side">
+      <ul>
+        <li><a class="navigation__link" href="#">Home</a></li>
+        <li><a class="navigation__link" href="#">Collection</a></li>
+        <li><a class="navigation__link" href="#">About Us</a></li>
+        <li><a class="navigation__link" href="#">Contact</a></li>
+      </ul>
+      <button class="navigation__sign-in">Sign In</button>
+    </div>
   </nav>
   <header class="header">
     <div class="header__inner-container">
@@ -20,5 +28,16 @@
       </div>
     </div>
   </header>
+  <main>
+    <section class="accordion">
+      <div class="accordion__tab">
+        <input type="checkbox" id="accordion1">
+        <label for="accordion1" class="accoridion__tab-label">Do you ship worldwide?</label>
+        <div class="accordion__tab-content">
+          <p>Yes! We ship worldwide</p>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
